@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 :root {
     --cor-primaria: #6A8FA6; /* Azul Cinza */
@@ -7,7 +7,6 @@
     --cor-texto: #404040; /* Cinza Escuro */
     --cor-fundo: #0D0D0D; /* Preto */
 }
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;

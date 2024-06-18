@@ -1,0 +1,256 @@
+:root {
+  --cor-primaria: #6a8fa6; /* Azul Cinza */
+  --cor-secundaria: #d9d3c7; /* Cinza Claro */
+  --cor-terciaria: #a6a09f; /* Cinza Médio */
+  --cor-texto: #404040; /* Cinza Escuro */
+  --cor-fundo: #0d0d0d; /* Preto */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease; /* Efeito de transição para o hover */
+}
+
+nav a:hover {
+  color: var(--cor-secundaria); /* Cor de hover */
+}
+
+
+section {
+    background-color: var(--cor-secundaria);
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#sobre h1 {
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    background-color: white;
+}
+
+.content img {
+    width: 50%; /* ajuste o tamanho da imagem aqui */
+    height: 50%;
+    margin-right: 20px; /* ajuste a distância entre a imagem e o texto aqui */
+}
+
+.content p {
+    flex: 1; /* faz com que o texto ocupe o resto do espaço */
+}
+
+#sobre img {
+    width: 30%; /* ajuste o tamanho da imagem aqui */
+    height: 300px;
+    border-radius: 60%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px; /* ajuste a distância entre a imagem e o texto aqui */
+}
+
+
+
+#sobre h1 {
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    flex: 1; /* faz com que o texto ocupe o resto do espaço */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+section > h1 {
+  text-align: center;
+}
+
+section#habilidades{
+    text-align: center;
+}
+
+.linguagem {
+  display: inline-block;
+  margin: 5px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Adiciona borda redonda */
+  overflow: hidden; /* Oculta a borda do container */
+  text-align: center;
+  position: relative;
+}
+
+.legenda{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Cor de fundo da legenda */
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.legenda:hover{
+    opacity: 1;
+}
+
+.linguagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Adiciona borda redonda à imagem */
+}
+
+.linguagem p {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--cor-primaria);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--cor-terciaria);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease; /* Efeito de transição para o hover */
+}
+
+footer a:hover {
+  color: var(--cor-secundaria); /* Cor de hover */
+}
+
+/* Media queries para responsividade */
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    margin-bottom: 10px;
+  }
+  img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.5em;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 0;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  main {
+    padding: 1em;
+  }
+  section {
+    padding: 1em;
+  }
+  img {
+    height: 100px;
+  }
+}
