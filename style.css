@@ -83,8 +83,12 @@ h2 {
 }
 
 .descricao {
-    text-align: center;
+    text-align: justify;
+    font-size: 1.1em;
+    text-indent: 30px;
+    margin: 10px;
 }
+
 
 .linguagens {
     display: flex;
